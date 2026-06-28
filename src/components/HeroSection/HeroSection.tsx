@@ -49,7 +49,7 @@ export default function HeroSection({ onOpenDemo, onOpenSurvey }: HeroSectionPro
         ref={backgroundRef}
         className="absolute inset-0 z-0 scale-105 pointer-events-none"
         style={{
-          backgroundImage: `linear-gradient(to bottom, rgba(5, 5, 5, 0.3) 0%, rgba(5, 5, 5, 0.9) 70%, rgba(5, 5, 5, 1) 100%), url('/wallpapers/cover01.jpeg')`,
+          backgroundImage: `linear-gradient(to bottom, rgba(5, 5, 5, 0.3) 0%, rgba(5, 5, 5, 0.9) 70%, rgba(5, 5, 5, 1) 100%), url('/wallpapers/cover.jpeg')`,
           backgroundSize: "cover",
           backgroundPosition: "center 40%",
           willChange: "transform",
