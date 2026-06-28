@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cinzel:wght@400;500;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cinzel", Georgia, serif;
+  --font-display: "Cinzel Decorative", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+  
+  --color-gold-deep: #8a6f27;
+  --color-gold-aged: #c5a059;
+  --color-gold-bright: #f3e5ab;
+  --color-gold-light: #f9f5e8;
+  
+  --color-gothic-dark: #070708;
+  --color-gothic-gray: #121214;
+  --color-gothic-light: #1e1e22;
+  --color-gothic-border: #2c271e;
+}
+
+/* Custom Scrollbar styled in Aged Gold and Deep Gothic Charcoal */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+::-webkit-scrollbar-thumb {
+  background: #111;
+  border-radius: 0 tracking-none;
+  border: 1px solid #c5a05933;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c5a059;
+}
+
+/* Base styling */
+html {
+  color-scheme: dark;
+  scroll-behavior: smooth;
+  background-color: #050505;
+  user-select: none;
+}
+
+body {
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  color: #dfdfdb;
+}
+
+/* Text selections matching the aged gold theme */
+::selection {
+  background-color: #c5a059;
+  color: #070708;
+}
+
+/* Elegant gold atmospheric glow */
+.gold-glow {
+  text-shadow: 0 0 15px rgba(197, 160, 89, 0.4);
+}
+
+.box-gold-glow {
+  box-shadow: 0 0 25px rgba(197, 160, 89, 0.15);
+}
+
+.box-gold-glow-hover:hover {
+  box-shadow: 0 0 35px rgba(197, 160, 89, 0.35);
+  border-color: #c5a059;
+}
+
+/* Medieval metallic border corner elements */
+.corner-border {
+  position: relative;
+}
+.corner-border::before, .corner-border::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-color: #c5a059;
+  border-style: solid;
+  pointer-events: none;
+}
+.corner-border::before {
+  top: -1px;
+  left: -1px;
+  border-width: 1px 0 0 1px;
+}
+.corner-border::after {
+  bottom: -1px;
+  right: -1px;
+  border-width: 0 1px 1px 0;
+}
